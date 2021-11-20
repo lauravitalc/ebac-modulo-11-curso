@@ -13,10 +13,11 @@ body {
 }
 
 .container {
-    padding:20px;
-    width:100%; 
+    display: block;
+    float: left;
+    padding: 20px;
+    max-width: 100%;
     margin: 0 auto;
-    display:block;
 }
 
 header {
@@ -160,5 +161,16 @@ footer small {
     section nav,
     section article {
         width: 100%;
+
+        .container {
+            padding-left:1%;
+            padding-right:1px;
+        }
     }  
+
+    @media (max-width: 768px) {
+        section nav,
+        section article {
+            width: 100%;
+        }  
     
